@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+        
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            gap: 10px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Student Registration Form</h2>
+
+        <form>
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Age</label>
+                <input type="number" placeholder="Enter your age" required>
+            </div>
+
+            <div>
+                <label>Date of Birth</label>
+                <input type="date" required>
+            </div>
+
+            <div>
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter your phone number" required>
+            </div>
+
+            <h3>Address Details</h3>
+            <div class="form-group">
+                <label>City</label>
+                <input type="text" placeholder="Enter your city" required>
+            </div>
+
+            <div class="form-group">
+                <label>State</label>
+                <input type="text" placeholder="Enter your state" required>
+            </div>
+
+            <div class="form-group">
+                <label>Country</label>
+                <input type="text" placeholder="Enter your country" required>
+            </div>
+
+            <div class="form-group">
+                <label>Pin Code</label>
+                <input type="text" placeholder="Enter your pin code" required>
+            </div>
+
+            <div class="form-group">
+                <label>Aadhar Number</label>
+                <input type="text" placeholder="Enter your Aadhar number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="Enter password" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Course</label>
+                <select>
+                    <option>Select Course</option>
+                    <option>B.Tech</option>
+                    <option>BCA</option>
+                    <option>B.Sc</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Hobbies</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Reading</label>
+                    <label><input type="checkbox"> Sports</label>
+                    <label><input type="checkbox"> Music</label>
+                </div>
+            </div>
+
+    </div>
+
+    <button type="submit">Register</button>
+    </form>
+    </div>
+
+</body>
+
+</html>
